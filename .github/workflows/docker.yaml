@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
+  schedule:
+    #UTC时间
+    - cron: '20 15 * * *'
 
 
 env:
